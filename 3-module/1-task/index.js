@@ -5,6 +5,9 @@
  * @returns {string}
  */
 function showSalary(data, age) {
+    return data.filter(user => user.age <= age)
+        .map(user => `${user.name}, ${user.balance}`)
+        .join('\n')
 }
 
 
