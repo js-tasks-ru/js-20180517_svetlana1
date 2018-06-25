@@ -8,5 +8,10 @@
  * @return {Function}
  */
 function makeLogging(fn, log) {
-
+    let i = 0;
+    return function (...args) {
+        log[i] = args;
+        i++;
+        return fn.apply(this, args);
+    }
 }
