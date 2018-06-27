@@ -1,3 +1,25 @@
 td {
     border: 1px solid black;
 }
+
+.sorted-table__thead-tr {
+    background: lightgreen;
+}
+
+.sorted-table__thead-td {
+    color: red;
+}
+
+.sorted-table__tbody-tr {
+    background: darkgreen;
+}
+
+.sorted-table__tbody-td {
+    color: yellow;
+}
+
+.sorted-table__thead-td_sort {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
