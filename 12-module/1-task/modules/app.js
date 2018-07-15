@@ -1,10 +1,9 @@
-(function () {
-    'use strict';
+import Input from './input'
 
-    window.app = {};
+let app = {};
 
-    window.addEventListener('DOMContentLoaded', function () {
-       window.app.input = new window.Input();
-    });
-
-})();
+addEventListener('DOMContentLoaded', function () {
+    app.input = new Input();
+});
+// export default app;
+window.app = app;
